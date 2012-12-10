@@ -27,3 +27,9 @@ for time in times
   elements = ("<div class=\"#{time.elClass}\" />" for x in [1..time.num])
   $("##{time.containerId}").append(elements.join(''))
 
+
+$body = $('body')
+$(document).on 'mousemove', (e)->
+  val = ((e.pageX + e.pageY) * 0.4) % 400
+  $body.css 'background-color', "hsl(#{val}, 100%, 50%)"
+

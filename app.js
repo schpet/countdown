@@ -1,5 +1,5 @@
 (function() {
-  var christmas, dayElement, days, diff, elements, hours, minutes, present, seconds, time, times, x, _i, _len;
+  var $body, christmas, dayElement, days, diff, elements, hours, minutes, present, seconds, time, times, x, _i, _len;
 
   christmas = new Date(2012, 11, 25, 18, 41);
 
@@ -45,5 +45,13 @@
     })();
     $("#" + time.containerId).append(elements.join(''));
   }
+
+  $body = $('body');
+
+  $(document).on('mousemove', function(e) {
+    var val;
+    val = ((e.pageX + e.pageY) * 0.4) % 400;
+    return $body.css('background-color', "hsl(" + val + ", 100%, 50%)");
+  });
 
 }).call(this);

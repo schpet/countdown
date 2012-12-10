@@ -1,6 +1,10 @@
 .days, .hours, .minutes, .seconds {
   background-size: 100%;
   display: inline-block;
+  -webkit-transition: -webkit-transform 1200ms;
+}
+.days:hover, .hours:hover, .minutes:hover, .seconds:hover {
+  -webkit-transform: rotate(720deg) scale(1.5);
 }
 .days {
   background: url("img/casperLLAMA.png");
