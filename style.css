@@ -1,0 +1,24 @@
+.days, .hours, .minutes, .seconds {
+  background-size: 100%;
+  display: inline-block;
+}
+.days {
+  background: url("img/casperLLAMA.png");
+  width: 75px;
+  height: 100px;
+}
+.hours {
+  background: url("img/slothpal.png");
+  width: 50px;
+  height: 38px;
+}
+.minutes {
+  background: url("img/dazee.png");
+  width: 75px;
+  height: 70px;
+}
+.seconds {
+  background: url("img/heymoon.png");
+  width: 30px;
+  height: 31px;
+}
