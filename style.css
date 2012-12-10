@@ -5,10 +5,16 @@
   -moz-transition: -moz-transform 1200ms;
   -ms-transition: -ms-transform 1200ms;
 }
-.days:hover, .hours:hover {
+.hours:hover {
   -webkit-transform: rotate(720deg) scale(1.5);
   -moz-transform: rotate(720deg) scale(1.5);
   -ms-transform: rotate(720deg) scale(1.5);
+}
+
+.days:hover {
+  -webkit-transform: rotate(360deg) scale(1.5);
+  -moz-transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
 }
 .days {
   background: url("img/casperLLAMA.png");
