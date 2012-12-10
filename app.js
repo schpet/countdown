@@ -1,5 +1,5 @@
 (function() {
-  var $body, christmas, dayElement, days, diff, elements, hours, minutes, present, seconds, time, times, x, _i, _len;
+  var $body, christmas, days, diff, elements, hours, minutes, present, seconds, time, times, x, _i, _len;
 
   christmas = new Date(2012, 11, 25, 18, 41);
 
@@ -17,9 +17,7 @@
 
   days = Math.floor(hours / 24);
 
-  console.log([days, hours, minutes, seconds]);
-
-  dayElement = '<div class="days" />';
+  minutes = minutes / 10;
 
   times = [
     {
@@ -30,6 +28,10 @@
       num: hours,
       elClass: 'hours',
       containerId: 'hours'
+    }, {
+      num: minutes,
+      elClass: 'minutes',
+      containerId: 'minutes'
     }
   ];
 

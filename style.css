@@ -2,9 +2,13 @@
   background-size: 100%;
   display: inline-block;
   -webkit-transition: -webkit-transform 1200ms;
+  -moz-transition: -moz-transform 1200ms;
+  -ms-transition: -ms-transform 1200ms;
 }
-.days:hover, .hours:hover, .minutes:hover, .seconds:hover {
+.days:hover, .hours:hover {
   -webkit-transform: rotate(720deg) scale(1.5);
+  -moz-transform: rotate(720deg) scale(1.5);
+  -ms-transform: rotate(720deg) scale(1.5);
 }
 .days {
   background: url("img/casperLLAMA.png");
@@ -18,8 +22,8 @@
 }
 .minutes {
   background: url("img/dazee.png");
-  width: 75px;
-  height: 70px;
+  width: 51px;
+  height: 498px;
 }
 .seconds {
   background: url("img/heymoon.png");

@@ -12,14 +12,12 @@ minutes = Math.floor seconds / 60
 hours   = Math.floor minutes / 60
 days    = Math.floor hours / 24
 
-console.log [ days, hours, minutes, seconds ]
-
-dayElement = '<div class="days" />'
+minutes = minutes / 10 # 10 daisies in that image
 
 times = [
   { num: days, elClass: 'days', containerId: 'days' }
   { num: hours, elClass: 'hours', containerId: 'hours' }
-  #{ num: minutes, elClass: 'minutes', containerId: 'minutes' }
+  { num: minutes, elClass: 'minutes', containerId: 'minutes' }
 ]
 
 
