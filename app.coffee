@@ -22,8 +22,9 @@ times = [
 
 
 for time in times
-  elements = ("<div class=\"#{time.elClass}\" />" for x in [1..time.num])
-  $("##{time.containerId}").append(elements.join(''))
+  if time.num > 0
+    elements = ("<div class=\"#{time.elClass}\" />" for x in [1..time.num])
+    $("##{time.containerId}").append(elements.join(''))
 
 
 $body = $('body')

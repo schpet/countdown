@@ -37,15 +37,17 @@
 
   for (_i = 0, _len = times.length; _i < _len; _i++) {
     time = times[_i];
-    elements = (function() {
-      var _ref, _results;
-      _results = [];
-      for (x = 1, _ref = time.num; 1 <= _ref ? x <= _ref : x >= _ref; 1 <= _ref ? x++ : x--) {
-        _results.push("<div class=\"" + time.elClass + "\" />");
-      }
-      return _results;
-    })();
-    $("#" + time.containerId).append(elements.join(''));
+    if (time.num > 0) {
+      elements = (function() {
+        var _ref, _results;
+        _results = [];
+        for (x = 1, _ref = time.num; 1 <= _ref ? x <= _ref : x >= _ref; 1 <= _ref ? x++ : x--) {
+          _results.push("<div class=\"" + time.elClass + "\" />");
+        }
+        return _results;
+      })();
+      $("#" + time.containerId).append(elements.join(''));
+    }
   }
 
   $body = $('body');
