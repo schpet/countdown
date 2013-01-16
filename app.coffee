@@ -1,4 +1,4 @@
-christmas = new Date(2012, 11, 25, 18, 41)
+christmas = new Date(2013, 0, 28, 18, 41)
 present = new Date()
 
 diff = christmas.getTime() - present.getTime()
